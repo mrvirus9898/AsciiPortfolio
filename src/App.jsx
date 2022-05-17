@@ -4,7 +4,12 @@ import moon from './artimages/moon.jsx';
 import village from './artimages/village.jsx';
 import asciibanner from './artimages/Asciiworldbanner';
 import welcometo from './artimages/welcometo';
+import byNGB from './artimages/byNGB';
+import rocketship from './artimages/rocketship';
 import star from './artimages/star';
+import cloud from './artimages/cloud';
+import thincloud from './artimages/thincloud';
+import blankthincloud from './artimages/blankthincloud';
 
 import './App.css';
 
@@ -37,7 +42,7 @@ function App() {
         sticky={{ start: 0.8, end: 3.5 }}
         style={{ textAlign: 'center' }}
         >
-          {star()}
+
           {moon()}
         </ParallaxLayer>
         
@@ -46,16 +51,42 @@ function App() {
           offset={0.2}
           speed={0.05}
         >
-          {star()}
           {welcometo()}
+          <div class = "bannercontainer">
+          {star()}
           {asciibanner()} 
+          {star()}
+          </div>
+          {byNGB()}
+
         </ParallaxLayer>
 
         <ParallaxLayer
           offset={1.25}
           speed={0.025}
         >
-        
+        <div class = "rocketcontainer">
+        {cloud()}
+        {rocketship()}
+        </div>
+        <div class = "bannercontainer">
+        <div class = "cloudcontainer">
+        {blankthincloud()}
+        {thincloud()}
+        {thincloud()}
+        </div>
+        <div class = "cloudcontainer">
+        {thincloud()}
+        {blankthincloud()}
+        {thincloud()}
+        </div>
+        <div class = "cloudcontainer">
+        {blankthincloud()}
+        {blankthincloud()}
+        {blankthincloud()}
+        </div>
+        </div>
+
         </ParallaxLayer>
 
                                                                                                           

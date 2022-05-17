@@ -49,6 +49,22 @@ pre {
 				-0.04em -0.04em 0 #000;
 }
 
+.bannercontainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rocketcontainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cloudcontainer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
 .moon {
   text-align: right;
   color: white;
