@@ -2,8 +2,6 @@ import { useRef } from 'react';
 
 import starbkg from './artimages/starsbackground.jpg';
 
-import * as THREE from 'three';
-
 import moon from './artimages/moon.jsx';
 import village from './artimages/village.jsx';
 import asciibanner from './artimages/Asciiworldbanner';
@@ -15,6 +13,20 @@ import cloud from './artimages/cloud';
 import thincloud from './artimages/thincloud';
 import blankthincloud from './artimages/blankthincloud';
 import dragon from './artimages/dragon';
+import nicholasgbennett from './artimages/nicholasgbennett';
+import scrolldown from './artimages/scrolldown';
+import downarrow from './artimages/downarrow';
+import portfolio from './artimages/portfolio';
+import hardwork from './artimages/hardwork';
+import HardScience from './artimages/HardScience';
+import software from './artimages/software';
+import Softskills from './artimages/Softskills';
+import creativity from './artimages/creativity';
+import versatility from './artimages/versatility';
+import isdrawnfrom from './artimages/isdrawnfrom';
+import hsphysicsblock from './artimages/hsphysicsblock';
+import hsenvyblock from './artimages/hsenvyblock';
+import hschemblock from './artimages/hschemblock';
 
 import './App.css';
 
@@ -25,7 +37,7 @@ function App() {
 
   return (
     <div className="App">
-    <Parallax pages={4} ref={ref}>
+    <Parallax pages={5} ref={ref}>
         <ParallaxLayer
           offset={0}
           speed={1}
@@ -42,9 +54,12 @@ function App() {
           offset={0.2}
           speed={0.05}
         >
-          {welcometo()}
-          {asciibanner()} 
-          {byNGB()}
+          <div class="skillcontainer">
+          {portfolio()}
+          {nicholasgbennett()} 
+          {scrolldown()}
+          {downarrow()}
+          </div>
         </ParallaxLayer>
         
         <ParallaxLayer
@@ -55,45 +70,50 @@ function App() {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={1.25}
-          speed={0.025}
+          offset={1}
+          speed={1.2}
         >
-          <div class = "rocketcontainer">
-            {cloud()}
-            {rocketship()}
-          </div>
-          <div class = "bannercontainer">
-            <div class = "cloudcontainer">
-              {blankthincloud()}
-              {thincloud()}
-              {thincloud()}
-            </div>
-            <div class = "cloudcontainer">
-              {thincloud()}
-              {blankthincloud()}
-              {thincloud()}
-            </div>
-            <div class = "cloudcontainer">
-              {blankthincloud()}
-              {blankthincloud()}
-              {blankthincloud()}
-            </div>
-          </div>
+        <div class = "rocketcontainer">
+          {rocketship()}
+          {blankthincloud()}
+        </div>
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={3}
-          speed={0.05}
-          factor={4}
+          offset={1.1}
+          speed={0.25}
         >
-          {blankthincloud()}
-          {blankthincloud()}
-          {star()}
-          <div class = "bannercontainer">
-          {village()}
-          {dragon()}
+        <div class = "bannercontainer">
+          <div class = "skillcontainer">
+                {creativity()}
+                {isdrawnfrom()}
+                {versatility()}
           </div>
-        </ParallaxLayer>                                                                                         
+          <div class = "skillcontainer">
+              {HardScience()}
+              {software()}
+              {hardwork()}
+              {Softskills()}
+          </div>
+          <div class = "skillcontainer">
+            {blankthincloud()}
+          </div>
+        </div>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={2}
+          speed={0.005}
+          factor={3}
+        >
+          {HardScience()}
+          {hsenvyblock()}
+          <div class = "rocketcontainer">
+            {hsphysicsblock()}
+            {hschemblock()}
+          </div>
+        </ParallaxLayer>       
+                                                                                  
       </Parallax>
 
       

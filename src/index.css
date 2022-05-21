@@ -52,8 +52,14 @@ pre {
 
 .rocketcontainer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
+
+.skillcontainer {
+  display: column;
+  justify-content: center;
+}
+
 
 .cloudcontainer {
   display: flex;
@@ -65,10 +71,10 @@ pre {
   text-align: right;
   color: white;
   font-size: 0.7vw;
-	text-shadow: -0.04em 0.04em 0 #000,
-				  0.04em 0.04em 0 #000,
-				 0.04em -0.04em 0 #000,
-				-0.04em -0.04em 0 #000;
+	text-shadow: -0.04em 0.04em 0 rgb(255, 255, 255),
+				  0.04em 0.04em 0 rgb(255, 255, 255),
+				 0.04em -0.04em 0 rgb(255, 255, 255),
+				-0.04em -0.04em 0 rgb(255, 255, 255);
 }
 .village {
   text-align: left;
@@ -90,6 +96,49 @@ pre {
 				 0.04em -0.04em 0 #000,
 				-0.04em -0.04em 0 #000;
 }
+.block {
+  text-align: center;
+  color: white;
+  font-size: 0.8vw;
+  line-height: 100%;
+	text-shadow: -0.04em 0.04em 0 #000,
+				  0.04em 0.04em 0 #000,
+				 0.04em -0.04em 0 #000,
+				-0.04em -0.04em 0 #000;
+}
+
+.nicholasgbennett {
+  text-align: center;
+  color: white;
+  font-size: 1vw;
+  line-height: 100%;
+	text-shadow: -0.04em 0.04em 0 rgb(255, 255, 255),
+				  0.04em 0.04em 0 rgb(255, 255, 255),
+				 0.04em -0.04em 0 rgb(255, 255, 255),
+				-0.04em -0.04em 0 rgb(255, 255, 255);
+}
+
+.mediumbanner {
+  text-align: center;
+  color: white;
+  font-size: 0.7vw;
+  line-height: 100%;
+	text-shadow: -0.04em 0.04em 0 rgb(121, 121, 121),
+				  0.04em 0.04em 0 rgb(121, 121, 121),
+				 0.04em -0.04em 0 rgb(121, 121, 121),
+				-0.04em -0.04em 0 rgb(121, 121, 121);
+}
+
+.mediumbannerbrite {
+  text-align: center;
+  color: white;
+  font-size: 0.7vw;
+  line-height: 100%;
+	text-shadow: -0.04em 0.04em 0 rgb(255, 255, 255),
+				  0.04em 0.04em 0 rgb(255, 255, 255),
+				 0.04em -0.04em 0 rgb(255, 255, 255),
+				-0.04em -0.04em 0 rgb(255, 255, 255);
+}
 
 .star {
   text-align: center;
@@ -102,6 +151,17 @@ pre {
 				  0.04em 0.04em 0 #000,
 				 0.04em -0.04em 0 #000,
 				-0.04em -0.04em 0 #000;
+}
+
+.rocketship {
+  text-align: center;
+  color: white;
+  font-size: 0.7vw;
+  line-height: 100%;
+	text-shadow: -0.04em 0.04em 0 rgb(121, 121, 121),
+				  0.04em 0.04em 0 rgb(121, 121, 121),
+				 0.04em -0.04em 0 rgb(121, 121, 121),
+				-0.04em -0.04em 0 rgb(121, 121, 121);
 }
 
 

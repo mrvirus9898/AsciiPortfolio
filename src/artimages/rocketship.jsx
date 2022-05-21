@@ -6,13 +6,13 @@ function rocketship() {
       / \       
      /___\      
     |=   =|     
-    |  u  |     
-    |  n  |     
-    |  k  |     
-    |  n  |     
-    |  o  |     
-    |  w  |     
-    |  n  |     
+    |  C  |     
+    |  O  |     
+    |  U  |     
+    |  R  |     
+    |  A  |     
+    |  G  |     
+    |  E  |     
     |     |     
     |     |     
    /|##!##|\    
@@ -70,5 +70,7 @@ export{rocketship as default};
        .
        .
        .
+
+       Courage
 
        */

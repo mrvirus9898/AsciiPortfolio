@@ -17,7 +17,7 @@ function dragon() {
     `
     return(  
         <div>
-            <pre class="dragon">
+            <pre class="moon">
             {art}</pre>
             </div>
     )
